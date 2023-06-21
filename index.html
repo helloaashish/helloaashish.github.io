@@ -107,12 +107,31 @@
              
   <section id="lesson-name">
 <h1>ANACIN-X Tutorial<a class="headerlink" href="#lesson-name" title="Permalink to this heading"></a></h1>
-<p>Non-deterministic results often arise unexpectedly in High Performance Computing (HPC) applications. These make reproducible and correct results difficult to create. As such, there is a need to improve the ability of software developers and scientists to comprehend root sources of non-determinism in their applications. To this end, we present ANACIN-X.</p>
+<p>Non-deterministic results often arise unexpectedly in High Performance Computing (HPC) applications. 
+  These events can have a negative impact on  the debugging process, and correctness of HPC and
+   scientific simulations. 
+  ANACIN-X is a software framework specifically designed to measure the degree of non-determinism 
+  in point-to-point communication within MPI applications, utilizing graph kernel distances. 
+  This tutorial aims to assist developers and scientists in understanding and investigating the origins of non-determinism using ANACIN-X.</p>
 <div class="admonition-prerequisites prerequisites admonition" id="prerequisites-0">
 <p class="admonition-title">Prerequisites</p>
-<p>Before attending this workshop, please make sure that you have access to a computer with a C compiler and an MPI library installed. If you have access to a supercomputer (e.g. a SNIC system) with a compute allocation you can use that during the workshop. Any questions on how to use a particular HPC resource should be directed to the appropriate support desk. You can also use your own computer for this workshop, provided that it has compilers and an MPI library installed. If you do not already have these installed, we recommend that you set up an isolated software environment using conda. For Windows computers we recommend to use the Windows Subsystem for Linux (WSL). Detailed instructions can be found on the Setting up your system page.
+
+<p> To make most of this tutorial, it it s recommended to have a basic understanding of the following prerequisites:
+  <blockquote>
+    <div><ul class="simple">
+      <li> Understanding of High Performance Computing (HPC) concepts, including parallel computing, message passing interfaces (MPI), and scientific simulations.</li>
+    <li>Proficiency in programming languages commonly used in HPC, such as C, C++, or Fortran.</li>
+    <li>Familiarity with MPI programming, including point-to-point communication, collective operations, and MPI functions.</li>
+    <li>Basic knowledge of graph theory concepts, such as vertices, edges, and graph connectivity</li>
+    <li>Familiarity with data visualization techniques, as the tutorial includes visualizing non-deterministic behavior and graph kernel distances.</li>
+    <li>Knowledge of Jupyter Notebook, including the ability to set up and run applications within the Jupyter environment, as the tutorial involves running ANACIN-X on Jupyter Notebook.</li>
+
+
+    </ul>
+    </div></blockquote>
 
 </p>
+
 </div>
 <table class="colwidths-auto docutils align-default">
 
@@ -147,56 +166,44 @@
 </table>
 <div class="toctree-wrapper compound">
 </div>
-<div class="toctree-wrapper compound">
-<p class="caption" role="heading"><span class="caption-text">Reference</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="quick-reference/">Quick  Reference</a></li>
-<li class="toctree-l1"><a class="reference internal" href="guide/">Instructor’s  guide</a></li>
-</ul>
-</div>
+
 <section id="who-is-the-course-for">
 
 
 <span id="learner-personas"></span><h2>Who is the course for?<a class="headerlink" href="#who-is-the-course-for" title="Permalink to this heading"></a></h2>
-<p>This course is for students, researchers, engineers and programmers
-who already know the basics of MPI and want to learn more advanced MPI
-topics. To derive benefit from this material you should have attended
-introductory MPI training and preferably used basic MPI functionality
-in some code projects.  Specifically, this lesson assumes that
-participants have some prior experience with or knowledge of the
-following topics (but no expertise is required):</p>
-<blockquote>
-<div><ul class="simple">
-<li><p>General concepts: distributed memory parallelism, MPI process model</p></li>
-<li><p>Communicators</p></li>
-<li><p>Point-to-point communication</p></li>
-<li><p>Non-blocking point-to-point communication</p></li>
-<li><p>MPI datatypes</p></li>
-</ul>
-</div></blockquote>
-<p>These pre-requisites are taught in courses such as <a class="reference external" href="https://pdc-support.github.io/introduction-to-mpi/">PDC’s Introduction to MPI</a>  and the SNIC course <a class="reference external" href="http://www.lunarc.lu.se/training/an-introduction-to-parallel-programming-using-message-passing-with-mpi-1-4-december-2020/">An
-introduction to parallel programming using Message Passing with MPI</a>.</p>
+<p>
+  This course is designed for students, professionals and researchers in data science community.
+  Computer science courses introduce data science students to parallel programming,
+   but an in-depth understanding of executions on large scale HPC systems is usually not explored. 
+   Consequently, data scientists are not sufficiently trained in recognizing and addressing 
+   non-determinism when it appears in the data generation stage.
+ Through this course, we aim to bridge the knowledge gap between the data science and HPC-enabled domain science. 
+
+</p>
 </section>
 <section id="about-the-course">
   <section id="about-the-course">
+
+
     <h2>About the course<a class="headerlink" href="#about-the-course" title="Permalink to this heading"></a></h2>
-    <p>This lesson material is developed by the <a class="reference external" href="https://enccs.se/">EuroCC National Competence
-    Center Sweden (ENCCS)</a> and taught in ENCCS
-    workshops. It is aimed at researchers and developers who already know
-    the basics of MPI. Each lesson episode has clearly defined learning
-    objectives and includes multiple exercises along with solutions, and
-    is therefore also useful for self-learning.
-    The lesson material is licensed under <a class="reference external" href="https://creativecommons.org/licenses/by/4.0/">CC-BY-4.0</a> and can be reused in any form
-    (with appropriate credit) in other courses and workshops.
-    Instructors who wish to teach this lesson can refer to the <a class="reference internal" href="guide/"><span class="doc">Instructor’s guide</span></a> for
-    practical advice.</p>
+    <p>This project is a joint effort between two southern academic institutions: University of Tennesse-Knoxville
+      (UTK) and the University of North Texas (UNT).</p>
 </section>
+
 <section id="see-also">
 <h2>See also<a class="headerlink" href="#see-also" title="Permalink to this heading"></a></h2>
 </section>
 <section id="credits">
 <h2>Credits<a class="headerlink" href="#credits" title="Permalink to this heading"></a></h2>
 </section>
+<div class="toctree-wrapper compound">
+  <p class="caption" role="heading"><span class="caption-text">Reference</span></p>
+  <ul>
+  <li class="toctree-l1"><a class="reference internal" href="quick-reference/">Quick  Reference</a></li>
+  <li class="toctree-l1"><a class="reference internal" href="guide/">Instructor’s  guide</a></li>
+  </ul>
+  </div>
+
 </section>
 
 
