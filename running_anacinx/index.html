@@ -64,9 +64,10 @@
               <p class="caption" role="heading"><span class="caption-text">Chapters</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="guide/">Tutorial Objectives</a></li>
+<li class="toctree-l1"><a class="reference internal" href="guide/">MPI and Non-Determinism</a></li>
   <li class="toctree-l1"><a class="reference internal" href="guide/">MPI</a></li>
   <li class="toctree-l1"><a class="reference internal" href="guide/">Graphs</a></li>
-  <li class="toctree-l1"><a class="reference internal" href="guide/">Non-Determinism in MPI Applications</a></li>
+  
   <li class="toctree-l1"><a class="reference internal" href="guide/">ANACIN-X</a></li>
   
   <li class="toctree-l1"><a class="reference internal" href="guide/">ANACINX Steps</a></li>
@@ -125,14 +126,19 @@
  <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>  $ mkdir results
   $ module load apptainer
   $ apptainer pull --disable-cache oras://docker.io/yejashi/anacinx_prod:ppc64le
-  $ jypyter notebook --no-browser --port-8888
   $ apptainer build --sandbox dir_anacinx anacinx_prod_ppc64le.sif
         </pre></div>
         </div>
-  
-  
-
 </p>
+<figure class="align-center" id="id4">
+  <img alt="../_images/E01-pack_unpack.svg" src="../_images/GetAnacinxImage.gif" /><figcaption>
+  <p><span class="caption-text">MPI allows the programmer to communicate heterogeneous collections into a
+  single message, without defining a full-fledged custom datatype. The data is
+  packed into a buffer of type <code class="docutils literal notranslate"><span class="pre">MPI_PACKED</span></code>. On the receiving end, the buffer
+  will be unpacked into its constituent components.</span><a class="headerlink" href="#id4" title="Permalink to this image"></a></p>
+  </figcaption>
+  </figure>
+
 </section>
 
 <section id="getting-jupyter-notebook">
