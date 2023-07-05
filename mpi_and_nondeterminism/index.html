@@ -42,7 +42,7 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="#" class="icon icon-home">ANACIN-X
+            <a href="../index.html" class="icon icon-home">ANACIN-X
               <img src="../_images/anacin-logo.png" class="logo" alt="Logo"/>
           </a>
 <div role="search">
@@ -63,8 +63,12 @@
             </ul>
               <p class="caption" role="heading"><span class="caption-text">Chapters</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="guide/">Tutorial Objectives</a></li>
-<li class="toctree-l1"><a class="reference internal" href="guide/">MPI and Non-Determinism</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorial_objectives/">Tutorial Objectives</a></li>
+<li class="toctree-l1"><a class="reference internal" href="index.html">MPI and Non-Determinism</a><ul>
+  <li class="toctree-l2"><a class="reference internal" href="#message-passing-interface">Message Passing Interface </a></li>
+  <li class="toctree-l2"><a class="reference internal" href="#non-determinism-in-mpi-applications">Non-Determinism in MPI Applications </a></li>
+  <li class="toctree-l2"><a class="reference internal" href="#impacts-of-non-determinism">Impacts of Non-Determinism</a></li>
+</ul>
   <li class="toctree-l1"><a class="reference internal" href="guide/">Graphs</a></li>
   <li class="toctree-l1"><a class="reference internal" href="guide/">ANACIN-X</a></li>
   <li class="toctree-l1"><a class="reference internal" href="guide/">ANACINX Steps</a></li>
@@ -125,7 +129,7 @@
 
 </section>
 
-<section id="non-determinism-in-mpi">
+<section id="non-determinism-in-mpi-applications">
 
 
     <span id="learner-personas"></span><h2>Non-Determinism in MPI applications.<a class="headerlink" href="#pulling-anacinx" title="Permalink to this heading"></a></h2>
@@ -144,7 +148,7 @@
     <section>
         <h3> Example 2</h3>
         <figure class="align-center" id="id4">
-            <img alt="../_images/E01-pack_unpack.svg" src="../_images/example1.png" /><figcaption>
+            <img alt="../_images/E01-pack_unpack.svg" src="../_images/example2.png" /><figcaption>
             <p><span class="caption-text">Example of Non-Determinism</span><a class="headerlink" href="#id4" title="Permalink to this image"></a></p>
             </figcaption>
             </figure>
@@ -152,7 +156,7 @@
     </section>
 
 
-    <section id="non-determinism-impact">
+    <section id="impacts-of-non-determinism">
 
 
         <span id="learner-personas"></span><h2>Impact of Non-Determinism <a class="headerlink" href="#pulling-anacinx" title="Permalink to this heading"></a></h2>
@@ -180,7 +184,7 @@
         <section>
         <h3> Example 2</h3>
         <figure class="align-center" id="id4">
-            <img alt="../_images/E01-pack_unpack.svg" src="../_images/example1.png" /><figcaption>
+            <img alt="../_images/E01-pack_unpack.svg" src="../_images/example2.png" /><figcaption>
             <p><span class="caption-text">Example of Non-Determinism</span><a class="headerlink" href="#id4" title="Permalink to this image"></a></p>
             </figcaption>
             </figure>
@@ -202,19 +206,15 @@
   
 </section>
 
-
-
-
-
-
-
 </section>
 
 
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="quick-reference/" class="btn btn-neutral float-right" title="Quick Reference" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+            <a href="../one-sided-sync/" class="btn btn-neutral float-left" title="One-sided communication: synchronization" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+            <a href="../mpi-and-threads-pt2/" class="btn btn-neutral float-right" title="MPI and threads in practice" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>    </div>
+
     </div>
 
   <hr/>
