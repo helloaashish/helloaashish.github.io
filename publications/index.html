@@ -130,8 +130,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </style>
 
 <div class="jumbotron">
-  <h3 id="preprints">Preprints</h3>
-  <ol class="bibliography" reversed="reversed"><li><style>
+  <h3 id="preprints">Posters</h3>
+  <ol class="bibliography" reversed="reversed">
+    
+<li><style>
 .btn{
     margin-bottom:5px;
     padding-top:0px;
@@ -151,7 +153,11 @@ pre{
 </style>
 
 
-<div class="text-justify"><span id="feynman06">Feynman, R. P., &amp; Cline, J. M. <i>Feynman lectures on the strong interations</i>. arXiv:2006.08594.</span></div>
+<div class="text-justify"><span id="feynman06">Pandey, A., Khanda, A., Srinivasan, S., Bhowmick, S., Das, S. K., & Norris, B. (n.d.). CANDY:
+  An efficient framework for updating properties on large dynamic networks. The International
+  Conference for High Performance Computing, Networking, Storage and Analysis, November 13-
+  18, 2022, Dallas, Texas, USA.
+  </span></div>
 
 <!-- You can use the below to make your name bold -->
 <!-- <span id="feynman06">Feynman, R. P., &amp; Cline, J. M. <i>Feynman lectures on the strong interations</i>. arXiv:2006.08594.</span></div> -->
@@ -160,17 +166,17 @@ pre{
 
 
 
-<a href="/papers/feynman06.pdf" target="_blank"><button class="btn btn-success btm-sm">PDF</button></a>
+<a href="https://sc22.supercomputing.org/proceedings/tech_poster/poster_files/rpost153s3-file3.pdf" target="_blank"><button class="btn btn-success btm-sm">PDF</button></a>
 
 
 
 
-<a href="https://arxiv.org/abs/2006.08594" target="_blank"><button class="btn btn-primary btm-sm">ARXIV</button></a>
+<!-- <a href="https://arxiv.org/abs/2006.08594" target="_blank"><button class="btn btn-primary btm-sm">ARXIV</button></a> -->
 
 
 
 
-<button class="btn btn-danger btm-sm" onclick="toggleBibtexfeynman06()">BIB</button>
+<!-- <button class="btn btn-danger btm-sm" onclick="toggleBibtexfeynman06()">BIB</button> -->
 
 
 
@@ -179,20 +185,22 @@ pre{
 
 
 <div id="afeynman06" style="display: none; background-color:black; border-radius:5px; padding:10px; margin-bottom:20px;">
-<pre>@unpublished{feynman06,
+<!-- <pre>@unpublished{feynman06,
   author = {Feynman, R. P. and Cline, J. M.},
   title = {Feynman lectures on the strong interations},
   note = {arXiv:2006.08594},
   doi = {2006.08594},
   file = {feynman06.pdf}
 }
-</pre>
+</pre> -->
 </div>
 
 
 <div id="bfeynman06" style="display: none; background-color:black; border-radius:5px; padding:10px; margin-bottom:20px;">
-<pre>These twenty-two lectures, with exercises, comprise the extent of what was meant to be a full-year graduate-level course on the strong interactions and QCD, given at Caltech in 1987-88. The course was cut short by the illness that led to Feynman’s death. Several of the lectures were finalized in collaboration with Feynman for an anticipated monograph based on the course. The others, while retaining Feynman’s idiosyncrasies, are revised similarly to those he was able to check. His distinctive approach and manner of presentation are manifest throughout. Near the end he suggests a novel, nonperturbative formulation of quantum field theory in D dimensions. Supplementary material is provided in appendices and ancillary files, including verbatim transcriptions of three lectures and the corresponding audiotaped recordings.</pre>
+<pre>Queries on large graphs use the stored graph properties to generate responses. As most of the real-world graphs are dynamic, i.e., the graph topology changes with time, and hence the related graph properties are also time-varying. In such cases, maintaining correctness in stored graph properties requires recomputation or update on previous properties. Here, we present an efficient framework, CANDY for updating the properties in large dynamic networks. We prove the efficacy of our general framework by applying it to update graph properties such as Single Source Shortest Path (SSSP), Vertex Coloring, and PageRank. Empirically we show that our shared-memory parallel and NVIDIA GPU-based data-parallel implementations perform better than the state-of-the-art implementations.</pre>
 </div>
+
+
 
 <script>
 function toggleBibtexfeynman06(parameter) {
@@ -212,11 +220,102 @@ function toggleAbstractfeynman06(parameter) {
     }
 }
 </script>
-</li></ol>
+</li>
+
+
+
+
+<li><style>
+  .btn{
+      margin-bottom:5px;
+      padding-top:0px;
+      padding-bottom:0px;
+      padding-left:15px;
+      padding-right:15px;
+      height:20px:
+  }
+  pre{
+      white-space: pre-wrap;  
+      white-space: -moz-pre-wrap; 
+      white-space: -pre-wrap; 
+      white-space: -o-pre-wrap; 
+      word-wrap: break-word; 
+      width:100%; overflow-x:auto;
+  }
+  </style>
+  
+  
+  <div class="text-justify"><span id="feynman06">Srinivasan, S., Pandey, A., Khanda, A., Srinivasan, S., & Das, S. K. (n.d.). Parallel framework
+    for updating large scale dynamic networks. The International Conference for High Performance
+    Computing, Networking, Storage and Analysis, November 13-18, 2021, St. Louis, MO, USA.
+    </span></div>
+  
+  <!-- You can use the below to make your name bold -->
+  <!-- <span id="feynman06">Feynman, R. P., &amp; Cline, J. M. <i>Feynman lectures on the strong interations</i>. arXiv:2006.08594.</span></div> -->
+  
+  
+  
+  
+  
+  <a href="https://sc21.supercomputing.org/proceedings/tech_poster/poster_files/rpost162s2-file2.pdf" target="_blank"><button class="btn btn-success btm-sm">PDF</button></a>
+  
+  
+  
+  
+  <!-- <a href="https://arxiv.org/abs/2006.08594" target="_blank"><button class="btn btn-primary btm-sm">ARXIV</button></a> -->
+  
+  
+  
+  
+  <!-- <button class="btn btn-danger btm-sm" onclick="toggleBibtexfeynman06()">BIB</button> -->
+  
+  
+  
+  <button class="btn btn-warning btm-sm" onclick="toggleAbstractfeynman06()">ABSTRACT</button>
+  
+  
+  
+  <div id="afeynman06" style="display: none; background-color:black; border-radius:5px; padding:10px; margin-bottom:20px;">
+  <!-- <pre>@unpublished{feynman06,
+    author = {Feynman, R. P. and Cline, J. M.},
+    title = {Feynman lectures on the strong interations},
+    note = {arXiv:2006.08594},
+    doi = {2006.08594},
+    file = {feynman06.pdf}
+  }
+  </pre> -->
+  </div>
+  
+  
+  <div id="bfeynman07" style="display: none; background-color:black; border-radius:5px; padding:10px; margin-bottom:20px;">
+  <pre>Network analysis has become an important tool for studying large-scale systems of interacting entities that arise in diverse domains such as bioinformatics, sociology, and epidemiology. Properties of networks (or graphs), such as centrality metrics, communities, can provide larger insights into the characteristics of the underlying systems. Since the networks are extremely large, parallel algorithms are the need for timely analysis. However, developing scalable parallel algorithms for large-scale graphs is very challenging. This is because graph traversal is the primary component of many network algorithms. Traversal over unstructured data, such as networks, lead to irregular memory accesses resulting in low scalability and high computation costs. The problem is even more difficult when the networks are dynamic, that is, their structure changes with time. In this poster, we present a parallel framework for creating scalable parallel algorithms for updating the properties of dynamic networks.</pre></div>
+  
+  
+  
+  <script>
+  function toggleBibtexfeynman06(parameter) {
+      var x= document.getElementById('afeynman06');
+      if (x.style.display === 'none') {
+          x.style.display = 'block';
+      } else {
+          x.style.display = 'none';
+      }
+  }
+  function toggleAbstractfeynman06(parameter) {
+      var x= document.getElementById('bfeynman07');
+      if (x.style.display === 'none') {
+          x.style.display = 'block';
+      } else {
+          x.style.display = 'none';
+      }
+  }
+  </script>
+  </li>
+
 </div>
 
 <div class="jumbotron">
-  <h3 id="refereed-journal-articles">Refereed journal articles</h3>
+  <h3 id="refereed-journal-articles">Conference Papers</h3>
   <ol class="bibliography" reversed="reversed"><li><style>
 .btn{
     margin-bottom:5px;
@@ -237,7 +336,8 @@ pre{
 </style>
 
 
-<div class="text-justify"><span id="feynman1939forces">Feynman, R. P. (1939). Forces in molecules. <i>Physical Review</i>, <i>56</i>(4), 340.</span></div>
+
+<div class="text-justify"><span id="feynman1939forces"> A Distributed Algorithm for Identifying Strongly Connected Components on Incremental Graphs. (SBAC PAD 2023)</span></div>
 
 <!-- You can use the below to make your name bold -->
 <!-- <span id="feynman1939forces">Feynman, R. P. (1939). Forces in molecules. <i>Physical Review</i>, <i>56</i>(4), 340.</span></div> -->
@@ -246,12 +346,12 @@ pre{
 
 
 
-<a href="/papers/feynman39.pdf" target="_blank"><button class="btn btn-success btm-sm">PDF</button></a>
+<a href="/" target="_blank"><button class="btn btn-success btm-sm">PDF</button></a>
 
 
 
 
-<a href="http://doi.org/10.1103/PhysRev.56.340" target="_blank"><button class="btn btn-primary btm-sm">DOI</button></a>
+<a href="/" target="_blank"><button class="btn btn-primary btm-sm">DOI</button></a>
 
 
 
@@ -281,7 +381,9 @@ pre{
 
 
 <div id="bfeynman1939forces" style="display: none; background-color:black; border-radius:5px; padding:10px; margin-bottom:20px;">
-<pre>Formulas have been developed to calculate the forces in a molecular system directly, rather than indirectly through the agency of energy. This permits an independent calculation of the slope of the curves of energy vs. position of the nuclei, and may thus increase the accuracy, or decrease the labor involved in the calculation of these curves. The force on a nucleus in an atomic system is shown to be just the classical electrostatic force that would be exerted on this nucleus by other nuclei and by the electrons’ charge distribution. Qualitative implications of this are discussed.</pre>
+<pre>
+  Abstract will be added
+  </pre>
 </div>
 
 <script>
@@ -305,88 +407,7 @@ function toggleAbstractfeynman1939forces(parameter) {
 </li></ol>
 </div>
 
-<div class="jumbotron">
-  <h3 id="refereed-conference-proceedings">Refereed conference proceedings</h3>
-  <ol class="bibliography" reversed="reversed"><li><style>
-.btn{
-    margin-bottom:5px;
-    padding-top:0px;
-    padding-bottom:0px;
-    padding-left:15px;
-    padding-right:15px;
-    height:20px:
-}
-pre{
-    white-space: pre-wrap;  
-    white-space: -moz-pre-wrap; 
-    white-space: -pre-wrap; 
-    white-space: -o-pre-wrap; 
-    word-wrap: break-word; 
-    width:100%; overflow-x:auto;
-}
-</style>
 
-
-<div class="text-justify"><span id="example_proceeding">Doe, J. (2040). Example title. <i>Example Book</i>.</span></div>
-
-<!-- You can use the below to make your name bold -->
-<!-- <span id="example_proceeding">Doe, J. (2040). Example title. <i>Example Book</i>.</span></div> -->
-
-
-
-
-
-<a href="/papers/example_proceeding.pdf" target="_blank"><button class="btn btn-success btm-sm">PDF</button></a>
-
-
-
-
-
-<button class="btn btn-danger btm-sm" onclick="toggleBibtexexample_proceeding()">BIB</button>
-
-
-
-<button class="btn btn-warning btm-sm" onclick="toggleAbstractexample_proceeding()">ABSTRACT</button>
-
-
-
-<div id="aexample_proceeding" style="display: none; background-color:black; border-radius:5px; padding:10px; margin-bottom:20px;">
-<pre>@inproceedings{example_proceeding,
-  author = {Doe, J.},
-  year = {2040},
-  title = {Example title},
-  booktitle = {Example Book},
-  address = {Pasadena, CA},
-  file = {example_proceeding.pdf}
-}
-</pre>
-</div>
-
-
-<div id="bexample_proceeding" style="display: none; background-color:black; border-radius:5px; padding:10px; margin-bottom:20px;">
-<pre>Example abstract.</pre>
-</div>
-
-<script>
-function toggleBibtexexample_proceeding(parameter) {
-    var x= document.getElementById('aexample_proceeding');
-    if (x.style.display === 'none') {
-        x.style.display = 'block';
-    } else {
-        x.style.display = 'none';
-    }
-}
-function toggleAbstractexample_proceeding(parameter) {
-    var x= document.getElementById('bexample_proceeding');
-    if (x.style.display === 'none') {
-        x.style.display = 'block';
-    } else {
-        x.style.display = 'none';
-    }
-}
-</script>
-</li></ol>
-</div>
 
 </div>
 
